@@ -757,11 +757,11 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   position: absolute;
   top: 112px;
-  left: 24px;
+  left: auto;
+  padding-inline: 24px;
 }
 .set-1,
 .set-2,
