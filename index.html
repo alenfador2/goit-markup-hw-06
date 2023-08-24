@@ -388,6 +388,7 @@
                 name="name"
                 id="username"
                 class="username-input"
+                required
               />
             </div>
           </fieldset>
@@ -398,10 +399,12 @@
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               <input
-                type="tel"
+                type="number"
                 name="phone"
                 id="userphone"
                 class="userphone-input"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               />
             </div>
           </fieldset>
@@ -416,6 +419,7 @@
                 id="usermail"
                 type="email"
                 name="email"
+                required
               />
             </div>
           </fieldset>
@@ -429,7 +433,7 @@
             ></textarea>
           </fieldset>
           <div class="set-5">
-            <label for="terms-conditions" class="checkbox-label"></label>
+            <label for="terms-conditions" class="checkbox-label">
               <input
                 type="checkbox"
                 name="t&c"
@@ -441,7 +445,8 @@
                 <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
               I accept the terms and conditions of the
-              <a href="#" class="label-link">Privacy Policy</a></label>
+              <a href="#" class="label-link">Privacy Policy</a></label
+            >
           </div>
           <button type="submit" class="send-button">Send</button>
         </form>

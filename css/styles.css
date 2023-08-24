@@ -701,9 +701,14 @@ img {
   height: 40px;
   flex-shrink: 0;
   background: var(--navyblue, #2e2f42);
-  border: 1px solid var(--white, #fff);
+  border: 1px solid var(--navyblue-modal);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  outline: none;
+  padding-left: 16px;
+}
+.footer-input:focus-within {
+  border: 1px solid var(--iris);
 }
 .subscribe-button {
   position: absolute;
